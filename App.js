@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { OnBoardScreen } from "./screens/onBoardScreen"
 import { Login } from "./screens/Login"
 import { SignUp } from "./screens/SignUp"
+import { VerifyEmail } from "./screens/VerifyEmail"
 
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -31,6 +32,13 @@ export default function App() {
         <Stack.Screen
           name="signup"
           component={SignUp}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="verify-email"
+          component={VerifyEmail}
           options={{
             headerShown: false,
           }}

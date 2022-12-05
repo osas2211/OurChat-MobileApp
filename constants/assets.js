@@ -4,6 +4,7 @@ import authImg2 from "../assets/auth2.jpg"
 import mail from "../assets/mail.png"
 import lock from "../assets/lock.png"
 import user from "../assets/user.png"
+import envelope from "../assets/envelope.png"
 
 export const assets = {
   onboardImg,
@@ -12,4 +13,5 @@ export const assets = {
   mail,
   lock,
   user,
+  envelope,
 }

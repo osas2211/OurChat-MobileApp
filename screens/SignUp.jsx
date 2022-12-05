@@ -30,6 +30,7 @@ export const SignUp = ({ navigation }) => {
           text={"Sign Up"}
           bgColor={colors.mintGreen}
           width="85%"
+          onPress={() => navigation.navigate("verify-email")}
         />
         <View style={{ marginTop: 20, marginBottom: 50 }}>
           <Text style={{ color: colors.babyPowder }}>

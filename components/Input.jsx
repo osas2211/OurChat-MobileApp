@@ -41,3 +41,26 @@ export const AuthInput = ({
     </View>
   )
 }
+
+export const OtpInput = React.forwardRef(({ onChange, value }, ref) => {
+  return (
+    <View>
+      <TextInput
+        style={{
+          width: 65,
+          height: 65,
+          backgroundColor: colors.babyPowder,
+          fontSize: 24,
+          textAlign: "center",
+          borderColor: "#cad4c8",
+          borderWidth: 1,
+        }}
+        keyboardType="numeric"
+        maxLength={1}
+        ref={ref}
+        onChangeText={onChange}
+        value={`${value}`}
+      />
+    </View>
+  )
+})
