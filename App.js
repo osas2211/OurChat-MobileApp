@@ -5,6 +5,7 @@ import { OnBoardScreen } from "./screens/onBoardScreen"
 import { Login } from "./screens/Login"
 import { SignUp } from "./screens/SignUp"
 import { VerifyEmail } from "./screens/VerifyEmail"
+import { ResetPassword } from "./screens/ResetPassword"
 
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -25,6 +26,13 @@ export default function App() {
         <Stack.Screen
           name="login"
           component={Login}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="reset-password"
+          component={ResetPassword}
           options={{
             headerShown: false,
           }}

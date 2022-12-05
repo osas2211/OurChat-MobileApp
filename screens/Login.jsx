@@ -18,7 +18,10 @@ export const Login = ({ navigation }) => {
         <AuthInput icon={assets.lock} placeholder="Password" secure={true} />
       </View>
       <View style={{ width: "100%", alignItems: "center" }}>
-        <TouchableOpacity style={{ marginTop: 15, marginBottom: 35 }}>
+        <TouchableOpacity
+          style={{ marginTop: 15, marginBottom: 35 }}
+          onPress={() => navigation.navigate("reset-password")}
+        >
           <Text style={styles.text}>Forgot Password?</Text>
         </TouchableOpacity>
         <PrimaryButton text={"LogIn"} bgColor={colors.mintGreen} width="85%" />
