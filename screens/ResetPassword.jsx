@@ -7,7 +7,7 @@ import { PrimaryButton } from "../components/Button"
 
 export const ResetPassword = ({ navigation }) => {
   return (
-    <AuthWrapper>
+    <AuthWrapper img={assets.authImg3}>
       <View
         style={{
           width: "100%",
@@ -45,6 +45,7 @@ export const ResetPassword = ({ navigation }) => {
             text={"Continue"}
             bgColor={colors.mintGreen}
             width={"100%"}
+            onPress={() => navigation.navigate("reset-password-otp")}
           />
         </View>
         <TouchableOpacity

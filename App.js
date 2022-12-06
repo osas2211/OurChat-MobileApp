@@ -6,6 +6,8 @@ import { Login } from "./screens/Login"
 import { SignUp } from "./screens/SignUp"
 import { VerifyEmail } from "./screens/VerifyEmail"
 import { ResetPassword } from "./screens/ResetPassword"
+import { ResetPswdOTP } from "./screens/ResetPswdOTP"
+import { NewPassword } from "./screens/NewPassword"
 
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -33,6 +35,20 @@ export default function App() {
         <Stack.Screen
           name="reset-password"
           component={ResetPassword}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="reset-password-otp"
+          component={ResetPswdOTP}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="enter-new-password"
+          component={NewPassword}
           options={{
             headerShown: false,
           }}

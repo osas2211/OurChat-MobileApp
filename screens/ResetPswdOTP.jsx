@@ -2,16 +2,16 @@ import React, { useState } from "react"
 import { OtpScreen } from "./OtpScreen"
 import { assets, colors } from "../constants"
 
-export const VerifyEmail = ({ navigation }) => {
+export const ResetPswdOTP = ({ navigation }) => {
   const [otp1, setOtp1] = useState("")
   const [otp2, setOtp2] = useState("")
   const [otp3, setOtp3] = useState("")
   const [otp4, setOtp4] = useState("")
   return (
     <OtpScreen
-      header={"Verify your Email"}
-      img={assets.envelope}
-      onPress={() => {}}
+      header={"Reset Password"}
+      img={assets.reset}
+      onPress={() => navigation.navigate("enter-new-password")}
       otp1={otp1}
       otp2={otp2}
       otp3={otp3}
