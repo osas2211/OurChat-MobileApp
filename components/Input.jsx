@@ -1,6 +1,7 @@
 import { View, Text, TextInput, Image, StyleSheet } from "react-native"
 import React from "react"
 import { colors } from "../constants"
+import AntDesign from "react-native-vector-icons/AntDesign"
 
 export const AuthInput = ({
   icon,
@@ -64,3 +65,31 @@ export const OtpInput = React.forwardRef(({ onChange, value }, ref) => {
     </View>
   )
 })
+
+export const SearchInput = ({ value, onChange, onPress, placeholder }) => {
+  return (
+    <View style={{ width: "100%", alignItems: "center" }}>
+      <AntDesign
+        name="search1"
+        color={colors.smokyBlack}
+        size={27}
+        style={{ position: "absolute", top: 15, right: 35, zIndex: 1 }}
+        onPress={onPress}
+      />
+      <TextInput
+        style={{
+          backgroundColor: "#f1f8f3",
+          width: "90%",
+          margin: 5,
+          height: 50,
+          borderRadius: 15,
+          paddingHorizontal: 20,
+          paddingRight: 55,
+          color: colors.smokyBlack,
+          fontFamily: "MontRegular",
+        }}
+        placeholder={placeholder}
+      />
+    </View>
+  )
+}

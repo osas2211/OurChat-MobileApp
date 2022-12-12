@@ -14,6 +14,15 @@ const Stack = createNativeStackNavigator()
 export default function App() {
   const [loaded] = useFonts({
     rubik: require("./assets/fonts/rubik.ttf"),
+    MontBold: require("./assets/fonts/Montserrat-Bold.ttf"),
+    MontExtraBold: require("./assets/fonts/Montserrat-ExtraBold.ttf"),
+    MontSemiBold: require("./assets/fonts/Montserrat-SemiBold.ttf"),
+    MontLight: require("./assets/fonts/Montserrat-Light.ttf"),
+    MontExtraLight: require("./assets/fonts/Montserrat-ExtraLight.ttf"),
+    MontRegular: require("./assets/fonts/Montserrat-Regular.ttf"),
+    MontMedium: require("./assets/fonts/Montserrat-Medium.ttf"),
+    PlayBold: require("./assets/fonts/Play-Bold.ttf"),
+    PlayRegular: require("./assets/fonts/Play-Regular.ttf"),
   })
   if (!loaded) return null
   return (

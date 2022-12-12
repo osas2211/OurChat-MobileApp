@@ -23,8 +23,8 @@ export const Tabs = ({ navigation }) => {
           width: "90%",
           alignSelf: "center",
           marginBottom: 15,
-          borderRadius: 25,
-          height: 52,
+          borderRadius: 30,
+          height: 55,
         },
       }}
     >
