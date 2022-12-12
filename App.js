@@ -8,6 +8,7 @@ import { VerifyEmail } from "./screens/VerifyEmail"
 import { ResetPassword } from "./screens/ResetPassword"
 import { ResetPswdOTP } from "./screens/ResetPswdOTP"
 import { NewPassword } from "./screens/NewPassword"
+import { Tabs } from "./screens/TabScreens/Tabs"
 
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -63,6 +64,13 @@ export default function App() {
         <Stack.Screen
           name="verify-email"
           component={VerifyEmail}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="tabs"
+          component={Tabs}
           options={{
             headerShown: false,
           }}

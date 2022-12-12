@@ -24,7 +24,12 @@ export const Login = ({ navigation }) => {
         >
           <Text style={styles.text}>Forgot Password?</Text>
         </TouchableOpacity>
-        <PrimaryButton text={"LogIn"} bgColor={colors.mintGreen} width="85%" />
+        <PrimaryButton
+          text={"LogIn"}
+          bgColor={colors.mintGreen}
+          width="85%"
+          onPress={() => navigation.navigate("tabs")}
+        />
         <View style={{ marginTop: 20, marginBottom: 50 }}>
           <Text style={{ color: colors.babyPowder }}>
             Don't have an account?{" "}
