@@ -8,6 +8,8 @@ import lock from "../assets/lock.png"
 import user from "../assets/user.png"
 import envelope from "../assets/envelope.png"
 import reset from "../assets/reset.png"
+import profile from "../assets/profile.jpg"
+import stewie from "../assets/stewie.jpg"
 
 export const assets = {
   onboardImg,
@@ -20,4 +22,6 @@ export const assets = {
   user,
   envelope,
   reset,
+  profile,
+  stewie,
 }
