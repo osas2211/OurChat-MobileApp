@@ -1,15 +1,16 @@
-import { View, Text, StyleSheet, ScrollView, FlatList } from "react-native"
+import { View, Text, StyleSheet, FlatList } from "react-native"
 import React from "react"
-import { AuthInput, SearchInput } from "../../components/Input"
+import { SearchInput } from "../../components/Input"
 import { UserPreview } from "../../components/UserPreview"
 import { colors, assets } from "../../constants"
 import { TabStyles } from "./TabSyles"
 import { dummyData } from "../../assets/dummyData"
+import { TabHeader } from "../../components/TabHeader"
 
 export const Chats = ({ navigation }) => {
   return (
     <View style={TabStyles.container}>
-      <Text style={TabStyles.header}>Messages</Text>
+      <TabHeader tabName={"messages"} />
       <View style={{ marginTop: 15 }}>
         <SearchInput placeholder={"Search user"} />
       </View>

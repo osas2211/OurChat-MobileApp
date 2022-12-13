@@ -1,5 +1,6 @@
 import { View, Text, Image, TouchableOpacity } from "react-native"
 import React from "react"
+import { colors } from "../constants"
 
 export const UserPreview = ({
   preview,
@@ -8,6 +9,8 @@ export const UserPreview = ({
   userImage,
   msgColor,
   msgFamily,
+  online,
+  showStatus,
 }) => {
   return (
     <TouchableOpacity>
@@ -21,11 +24,29 @@ export const UserPreview = ({
           marginVertical: 10,
         }}
       >
-        <Image
-          source={userImage}
-          resizeMode="contain"
-          style={{ width: 50, height: 50, borderRadius: 50 }}
-        />
+        <View>
+          <Image
+            source={userImage}
+            resizeMode="contain"
+            style={{ width: 50, height: 50, borderRadius: 50 }}
+          />
+          {showStatus && (
+            <View
+              style={{
+                height: 13,
+                width: 13,
+                borderRadius: 13,
+                backgroundColor: online ? colors.mintGreen : "#CAD2C5",
+                position: "absolute",
+                zIndex: 1,
+                bottom: -15,
+                right: 0,
+                borderColor: colors.babyPowder,
+                borderWidth: 2,
+              }}
+            />
+          )}
+        </View>
         <View
           style={{
             flex: 1,
@@ -41,6 +62,7 @@ export const UserPreview = ({
               fontFamily: msgFamily || "MontLight",
               marginTop: 3,
               color: msgColor,
+              fontSize: 13,
             }}
           >
             {preview}

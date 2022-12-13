@@ -1,4 +1,4 @@
-import { NavigationContainer } from "@react-navigation/native"
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native"
 import { useFonts } from "expo-font"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { OnBoardScreen } from "./screens/onBoardScreen"
@@ -9,7 +9,15 @@ import { ResetPassword } from "./screens/ResetPassword"
 import { ResetPswdOTP } from "./screens/ResetPswdOTP"
 import { NewPassword } from "./screens/NewPassword"
 import { Tabs } from "./screens/TabScreens/Tabs"
+import { colors } from "./constants"
 
+const MyTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: colors.babyPowder,
+  },
+}
 const Stack = createNativeStackNavigator()
 export default function App() {
   const [loaded] = useFonts({
@@ -26,7 +34,7 @@ export default function App() {
   })
   if (!loaded) return null
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={MyTheme}>
       <Stack.Navigator initialRouteName="onBoarding">
         <Stack.Screen
           name="onBoarding"

@@ -2,6 +2,8 @@ import { assets, colors } from "../constants"
 export const dummyData = [
   {
     preview: "Wait, I'm on my way.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "08:32",
     userName: "Nayla Horner",
     userImage: assets.authImg4,
@@ -11,6 +13,8 @@ export const dummyData = [
   },
   {
     preview: "I hope it goes well🙌.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "08:45",
     userName: "Arun kirk",
     userImage: assets.authImg,
@@ -20,6 +24,8 @@ export const dummyData = [
   },
   {
     preview: "You: Yeah, You're right",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "09:01",
     userName: "Shaney Cruz",
     userImage: assets.authImg2,
@@ -29,6 +35,8 @@ export const dummyData = [
   },
   {
     preview: "Typing...",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "11:28",
     userName: "Lori Stamp",
     userImage: assets.authImg3,
@@ -38,6 +46,8 @@ export const dummyData = [
   },
   {
     preview: "Omg, this is amazing.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: false,
     lastSentTime: "12:51",
     userName: "Barry Dwayne",
     userImage: assets.profile,
@@ -47,6 +57,8 @@ export const dummyData = [
   },
   {
     preview: "Typing...",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "13:10",
     userName: "Stewie Griffin",
     userImage: assets.stewie,
@@ -56,6 +68,8 @@ export const dummyData = [
   },
   {
     preview: "Yes, of course!😂",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: false,
     lastSentTime: "15:07",
     userName: "Jane Foster",
     userImage: assets.authImg2,
@@ -65,6 +79,8 @@ export const dummyData = [
   },
   {
     preview: "Wait, I'm on my way.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: false,
     lastSentTime: "15:44",
     userName: "Nayla Horner",
     userImage: assets.authImg4,
@@ -74,6 +90,8 @@ export const dummyData = [
   },
   {
     preview: "I hope it goes well.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: false,
     lastSentTime: "16:24",
     userName: "Arun kirk",
     userImage: assets.authImg,
@@ -83,6 +101,8 @@ export const dummyData = [
   },
   {
     preview: "You: Yeah, You're right",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "21:08",
     userName: "Shaney Cruz",
     userImage: assets.authImg2,
@@ -92,6 +112,8 @@ export const dummyData = [
   },
   {
     preview: "Wait, I'm on my way.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "08:32",
     userName: "Nayla Horner",
     userImage: assets.authImg4,
@@ -101,6 +123,8 @@ export const dummyData = [
   },
   {
     preview: "I hope it goes well.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: false,
     lastSentTime: "08:45",
     userName: "Arun kirk",
     userImage: assets.authImg,
@@ -110,6 +134,8 @@ export const dummyData = [
   },
   {
     preview: "You: Yeah, You're right",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "09:01",
     userName: "Shaney Cruz",
     userImage: assets.authImg2,
@@ -119,6 +145,8 @@ export const dummyData = [
   },
   {
     preview: "Typing...",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "11:28",
     userName: "Lori Stamp",
     userImage: assets.authImg3,
@@ -128,6 +156,8 @@ export const dummyData = [
   },
   {
     preview: "Omg, this is amazing.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "12:51",
     userName: "Barry Dwayne",
     userImage: assets.profile,
@@ -137,6 +167,8 @@ export const dummyData = [
   },
   {
     preview: "Typing...",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "13:10",
     userName: "Stewie Griffin",
     userImage: assets.stewie,
@@ -146,6 +178,8 @@ export const dummyData = [
   },
   {
     preview: "Yes, of course!😂",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: false,
     lastSentTime: "15:07",
     userName: "Jane Foster",
     userImage: assets.authImg2,
@@ -155,6 +189,8 @@ export const dummyData = [
   },
   {
     preview: "Wait, I'm on my way.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "15:44",
     userName: "Nayla Horner",
     userImage: assets.authImg4,
@@ -164,6 +200,8 @@ export const dummyData = [
   },
   {
     preview: "I hope it goes well.",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: true,
     lastSentTime: "16:24",
     userName: "Arun kirk",
     userImage: assets.authImg,
@@ -173,6 +211,8 @@ export const dummyData = [
   },
   {
     preview: "You: Yeah, You're right",
+    preview2: "Lorem ipsum dolor, sit amet...",
+    online: false,
     lastSentTime: "21:08",
     userName: "Shaney Cruz",
     userImage: assets.authImg2,
