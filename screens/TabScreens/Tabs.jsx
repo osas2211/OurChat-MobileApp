@@ -26,19 +26,23 @@ export const Tabs = ({ navigation }) => {
           borderRadius: 30,
           height: 55,
         },
+        tabBarItemStyle: {
+          justifyContent: "space-around",
+          padding: 6,
+        },
       }}
     >
       <Tab.Screen
         name="chats"
         component={Chats}
         options={{
-          tabBarLabel: "Chat",
-          tabBarShowLabel: false,
+          tabBarLabel: "Chats",
+          tabBarShowLabel: true,
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="message-text-outline"
               color={color}
-              size={25}
+              size={22}
             />
           ),
         }}
@@ -48,9 +52,9 @@ export const Tabs = ({ navigation }) => {
         component={Friends}
         options={{
           tabBarLabel: "Friends",
-          tabBarShowLabel: false,
+          tabBarShowLabel: true,
           tabBarIcon: ({ color, size }) => (
-            <Feather name="users" color={color} size={25} />
+            <Feather name="users" color={color} size={22} />
           ),
         }}
       />
@@ -59,9 +63,9 @@ export const Tabs = ({ navigation }) => {
         component={Notifications}
         options={{
           tabBarLabel: "Notifications",
-          tabBarShowLabel: false,
+          tabBarShowLabel: true,
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="notifications" color={color} size={25} />
+            <Ionicons name="notifications" color={color} size={22} />
           ),
         }}
       />
@@ -70,9 +74,9 @@ export const Tabs = ({ navigation }) => {
         component={Profile}
         options={{
           tabBarLabel: "Profile",
-          tabBarShowLabel: false,
+          tabBarShowLabel: true,
           tabBarIcon: ({ color, size }) => (
-            <Feather name="user" color={color} size={25} />
+            <Feather name="user" color={color} size={22} />
           ),
         }}
       />

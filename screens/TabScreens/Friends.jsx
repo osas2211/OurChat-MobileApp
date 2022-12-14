@@ -15,11 +15,11 @@ import { dummyData } from "../../assets/dummyData"
 import AntDesign from "react-native-vector-icons/AntDesign"
 import { TabHeader } from "../../components/TabHeader"
 
-export const Friends = () => {
+export const Friends = ({ navigation }) => {
   return (
     <SafeAreaView style={TabStyles.container}>
-      <TabHeader tabName={"friends"} />
-      <View style={{ marginTop: 15 }}>
+      <TabHeader tabName={"friends"} navigation={navigation} />
+      <View style={{ marginTop: -20 }}>
         <SearchInput placeholder={"Search friends"} />
       </View>
       <FlatList

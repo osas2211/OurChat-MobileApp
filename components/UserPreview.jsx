@@ -11,6 +11,7 @@ export const UserPreview = ({
   msgFamily,
   online,
   showStatus,
+  unreadMsg,
 }) => {
   return (
     <TouchableOpacity>
@@ -73,11 +74,34 @@ export const UserPreview = ({
             fontFamily: "MontLight",
             fontSize: 12,
             alignSelf: "flex-end",
-            marginBottom: 12,
+            marginBottom: 15,
           }}
         >
           {lastSentTime}
         </Text>
+        {unreadMsg && (
+          <View
+            style={{
+              position: "absolute",
+              bottom: 0,
+              right: 3,
+              height: 17,
+              minWidth: 17,
+              borderRadius: 17,
+              backgroundColor: colors.mintGreen,
+            }}
+          >
+            <Text
+              style={{
+                color: colors.babyPowder,
+                textAlign: "center",
+                fontSize: 10,
+              }}
+            >
+              3
+            </Text>
+          </View>
+        )}
       </View>
     </TouchableOpacity>
   )

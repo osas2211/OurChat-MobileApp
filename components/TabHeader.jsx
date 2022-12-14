@@ -1,9 +1,9 @@
-import { View, Text } from "react-native"
+import { View, Text, Image, TouchableOpacity } from "react-native"
 import React from "react"
 import { TabStyles } from "../screens/TabScreens/TabSyles"
 import { colors, assets } from "../constants"
 
-export const TabHeader = ({ tabName }) => {
+export const TabHeader = ({ tabName, navigation }) => {
   return (
     <View style={TabStyles.header}>
       <Text
@@ -23,9 +23,23 @@ export const TabHeader = ({ tabName }) => {
           color: colors.babyPowder,
         }}
       >
-        {" "}
-        - {tabName}
+        {/* {" "}
+        - {tabName} */}
       </Text>
+
+      <TouchableOpacity onPress={() => navigation.navigate("profile")}>
+        <Image
+          source={assets.profile}
+          resizeMode="contain"
+          style={{
+            width: 50,
+            height: 50,
+            borderRadius: 50,
+            borderColor: colors.amber,
+            borderWidth: 1,
+          }}
+        />
+      </TouchableOpacity>
     </View>
   )
 }

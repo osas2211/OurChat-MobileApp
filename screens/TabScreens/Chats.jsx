@@ -10,8 +10,8 @@ import { TabHeader } from "../../components/TabHeader"
 export const Chats = ({ navigation }) => {
   return (
     <View style={TabStyles.container}>
-      <TabHeader tabName={"messages"} />
-      <View style={{ marginTop: 15 }}>
+      <TabHeader tabName={"messages"} navigation={navigation} />
+      <View style={{ marginTop: -20 }}>
         <SearchInput placeholder={"Search user"} />
       </View>
       <FlatList
@@ -25,6 +25,7 @@ export const Chats = ({ navigation }) => {
             lastSentTime={item.lastSentTime}
             msgColor={item.msgColor}
             msgFamily={item.msgFamily}
+            unreadMsg={true}
             key={index}
           />
         )}

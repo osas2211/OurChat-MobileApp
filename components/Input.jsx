@@ -71,7 +71,7 @@ export const SearchInput = ({ value, onChange, onPress, placeholder }) => {
     <View style={{ width: "100%", alignItems: "center" }}>
       <AntDesign
         name="search1"
-        color={colors.smokyBlack}
+        color={"grey"}
         size={27}
         style={{ position: "absolute", top: 15, right: 35, zIndex: 1 }}
         onPress={onPress}
@@ -87,6 +87,7 @@ export const SearchInput = ({ value, onChange, onPress, placeholder }) => {
           paddingRight: 55,
           color: colors.smokyBlack,
           fontFamily: "MontRegular",
+          elevation: 3,
         }}
         placeholder={placeholder}
       />
