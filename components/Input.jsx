@@ -94,3 +94,26 @@ export const SearchInput = ({ value, onChange, onPress, placeholder }) => {
     </View>
   )
 }
+
+export const MsgInput = ({ value, onChange, onPress, placeholder, width }) => {
+  return (
+    <View style={{ width, alignItems: "center" }}>
+      <TextInput
+        style={{
+          backgroundColor: "#f1f8f3",
+          width: "90%",
+          margin: 5,
+          height: 50,
+          borderRadius: 15,
+          paddingHorizontal: 20,
+          paddingRight: 55,
+          paddingVertical: 5,
+          color: colors.smokyBlack,
+          fontFamily: "MontRegular",
+        }}
+        placeholder={placeholder}
+        multiline={true}
+      />
+    </View>
+  )
+}

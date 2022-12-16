@@ -19,6 +19,7 @@ export const Chats = ({ navigation }) => {
         style={{ marginTop: 5, marginBottom: 10 }}
         renderItem={({ item, index, separators }) => (
           <UserPreview
+            navigation={navigation}
             userName={item.userName}
             preview={item.preview}
             userImage={item.userImage}

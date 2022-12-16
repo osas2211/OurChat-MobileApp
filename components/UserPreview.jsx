@@ -12,9 +12,10 @@ export const UserPreview = ({
   online,
   showStatus,
   unreadMsg,
+  navigation,
 }) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate("in-chat")}>
       <View
         style={{
           width: "90%",

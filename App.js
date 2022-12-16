@@ -10,6 +10,7 @@ import { ResetPswdOTP } from "./screens/ResetPswdOTP"
 import { NewPassword } from "./screens/NewPassword"
 import { Tabs } from "./screens/TabScreens/Tabs"
 import { colors } from "./constants"
+import { InChat } from "./screens/InChat"
 
 const MyTheme = {
   ...DefaultTheme,
@@ -88,6 +89,13 @@ export default function App() {
         <Stack.Screen
           name="tabs"
           component={Tabs}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="in-chat"
+          component={InChat}
           options={{
             headerShown: false,
           }}
