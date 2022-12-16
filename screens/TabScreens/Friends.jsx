@@ -32,6 +32,7 @@ export const Friends = ({ navigation }) => {
             userImage={item.userImage}
             online={item.online}
             showStatus={true}
+            navigation={navigation}
             key={index}
           />
         )}

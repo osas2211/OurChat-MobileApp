@@ -1,17 +1,31 @@
-import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native"
-import React from "react"
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  Image,
+  FlatList,
+} from "react-native"
+import React, { useEffect, useRef, useState } from "react"
 import { MsgInput } from "../components/Input"
 import FontAwesome from "react-native-vector-icons/FontAwesome"
 import MaterialIcons from "react-native-vector-icons/MaterialIcons"
 import { assets, colors } from "../constants"
+import MessageBox from "../components/MessageBox"
+import { messages } from "../assets/dummyMsgs"
 
 export const InChat = ({ navigation }) => {
+  const [msgs, setMsgs] = useState(messages.reverse((a, b) => a + b))
+  const ref = useRef()
   return (
     <View
       style={{
         flex: 1,
       }}
     >
+      <View style={styles.bg}>
+        <Image source={assets.chatBg} />
+      </View>
       <View style={styles.header}>
         <MaterialIcons
           name="arrow-back-ios"
@@ -25,6 +39,7 @@ export const InChat = ({ navigation }) => {
           color={"grey"}
           onPress={() => navigation.navigate("chats")}
         />
+
         <View
           style={{ flexDirection: "row", alignItems: "center", marginLeft: 25 }}
         >
@@ -56,6 +71,36 @@ export const InChat = ({ navigation }) => {
           </View>
         </View>
       </View>
+
+      <View style={styles.messages}>
+        <FlatList
+          ref={ref}
+          alwaysBounceVertical={true}
+          inverted={true}
+          showsVerticalScrollIndicator={false}
+          style={{ marginBottom: 180 }}
+          data={msgs}
+          renderItem={({ item, index }) => (
+            <MessageBox
+              alignSelf={
+                item.userName === "osas2211" ? "flex-end" : "flex-start"
+              }
+              text={item.message}
+              color={
+                item.userName === "osas2211"
+                  ? colors.babyPowder
+                  : colors.smokyBlack
+              }
+              bgColor={
+                item.userName === "osas2211" ? colors.mintGreen : "#CCDBDC"
+              }
+              time={item.time}
+              key={index}
+            />
+          )}
+        />
+      </View>
+
       <View style={styles.inputArea}>
         <MsgInput placeholder={"Type a message"} width={"90%"} />
         <TouchableOpacity>
@@ -79,6 +124,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: colors.mintGreen,
   },
+  bg: {
+    position: "absolute",
+    zIndex: -1,
+  },
+  messages: {
+    width: "90%",
+    alignSelf: "center",
+    paddingVertical: 10,
+  },
   inputArea: {
     position: "absolute",
     bottom: 0,
@@ -89,7 +143,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingRight: 30,
     paddingBottom: 10,
-    backgroundColor: colors.babyPowder,
+    zIndex: 1,
   },
   sendBtn: {
     backgroundColor: colors.smokyBlack,

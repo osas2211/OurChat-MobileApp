@@ -10,6 +10,7 @@ import envelope from "../assets/envelope.png"
 import reset from "../assets/reset.png"
 import profile from "../assets/profile.jpg"
 import stewie from "../assets/stewie.jpg"
+import chatBg from "../assets/chat-background.jpg"
 
 export const assets = {
   onboardImg,
@@ -24,4 +25,5 @@ export const assets = {
   reset,
   profile,
   stewie,
+  chatBg,
 }

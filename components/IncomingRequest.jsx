@@ -11,7 +11,7 @@ export const IncomingRequest = ({ image, name, id }) => {
         marginVertical: 7,
         alignSelf: "center",
         padding: 10,
-        borderColor: "#CCDBDC",
+        borderColor: "#edf3f3",
         borderWidth: 1,
         borderRadius: 8,
         alignItems: "center",
