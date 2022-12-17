@@ -7,7 +7,7 @@ export const AuthWrapper = ({ children, img }) => {
   return (
     <View style={styles.auth}>
       <StatusBar
-        style="auto"
+        style="light"
         backgroundColor={colors.mintGreen}
         animated={true}
       />

@@ -11,6 +11,7 @@ import { NewPassword } from "./screens/NewPassword"
 import { Tabs } from "./screens/TabScreens/Tabs"
 import { colors } from "./constants"
 import { InChat } from "./screens/InChat"
+import { UserProfile } from "./screens/UserProfile"
 
 const MyTheme = {
   ...DefaultTheme,
@@ -96,6 +97,13 @@ export default function App() {
         <Stack.Screen
           name="in-chat"
           component={InChat}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="user-profile"
+          component={UserProfile}
           options={{
             headerShown: false,
           }}

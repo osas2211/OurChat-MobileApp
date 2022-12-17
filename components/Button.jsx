@@ -25,12 +25,13 @@ const styles = StyleSheet.create({
   primaryBtn: {
     padding: 16,
     borderRadius: 12,
+    paddingHorizontal: 12,
   },
   sendBtn: {},
   text: {
-    textTransform: "uppercase",
+    textTransform: "capitalize",
     color: colors.babyPowder,
     textAlign: "center",
-    fontWeight: "bold",
+    fontFamily: "MontMedium",
   },
 })

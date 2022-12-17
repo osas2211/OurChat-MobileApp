@@ -40,36 +40,50 @@ export const InChat = ({ navigation }) => {
           onPress={() => navigation.navigate("chats")}
         />
 
-        <View
-          style={{ flexDirection: "row", alignItems: "center", marginLeft: 25 }}
-        >
-          <Image
-            source={assets.profile}
-            resizeMode="contain"
-            style={{ width: 60, height: 60, borderRadius: 60, marginRight: 10 }}
-          />
-          <View>
-            <Text
+        <TouchableOpacity onPress={() => navigation.navigate("user-profile")}>
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              marginLeft: 25,
+            }}
+          >
+            <Image
+              source={assets.authImg}
+              resizeMode="contain"
               style={{
-                textTransform: "capitalize",
-                fontFamily: "MontBold",
-                color: colors.babyPowder,
+                width: 60,
+                height: 60,
+                borderRadius: 60,
+                marginRight: 10,
+                borderWidth: 2,
+                borderColor: "#CAD2C5",
+                backgroundColor: colors.babyPowder,
               }}
-            >
-              {"Jude Bellingham"}
-            </Text>
-            <Text
-              style={{
-                fontFamily: "MontLight",
-                fontSize: 12,
-                marginTop: 5,
-                color: colors.babyPowder,
-              }}
-            >
-              Online
-            </Text>
+            />
+            <View>
+              <Text
+                style={{
+                  textTransform: "capitalize",
+                  fontFamily: "MontBold",
+                  color: colors.babyPowder,
+                }}
+              >
+                {"Jude Bellingham"}
+              </Text>
+              <Text
+                style={{
+                  fontFamily: "MontLight",
+                  fontSize: 12,
+                  marginTop: 5,
+                  color: colors.babyPowder,
+                }}
+              >
+                Online
+              </Text>
+            </View>
           </View>
-        </View>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.messages}>
@@ -118,11 +132,14 @@ export const InChat = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   header: {
-    padding: 15,
+    padding: 18,
     paddingTop: 40,
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: colors.mintGreen,
+    borderBottomLeftRadius: 35,
+    borderBottomRightRadius: 35,
+    elevation: 2,
   },
   bg: {
     position: "absolute",
@@ -131,7 +148,7 @@ const styles = StyleSheet.create({
   messages: {
     width: "90%",
     alignSelf: "center",
-    paddingVertical: 10,
+    paddingBottom: 10,
   },
   inputArea: {
     position: "absolute",
