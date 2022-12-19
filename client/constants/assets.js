@@ -1,4 +1,5 @@
 import onboardImg from "../assets/onboard.png"
+import onboardImg2 from "../assets/onboard2.jpg"
 import authImg from "../assets/auth.jpg"
 import authImg2 from "../assets/auth2.jpg"
 import authImg3 from "../assets/auth3.jpg"
@@ -14,6 +15,7 @@ import chatBg from "../assets/chat-background.jpg"
 
 export const assets = {
   onboardImg,
+  onboardImg2,
   authImg,
   authImg2,
   authImg3,

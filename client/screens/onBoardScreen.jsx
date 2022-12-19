@@ -22,11 +22,15 @@ export const OnBoardScreen = ({ navigation }) => {
       />
       <View style={styles.onboard}>
         <Image
-          source={assets.onboardImg}
-          resizeMode="stretch"
+          source={assets.onboardImg2}
+          resizeMode="contain"
           style={styles.img}
         />
         <View style={styles.text}>
+          <Text style={{ fontFamily: "rubik", fontSize: 30 }}>
+            <Text style={{ color: "#f39116" }}>Our</Text>
+            <Text style={{ color: colors.mintGreen }}>Chat</Text>
+          </Text>
           <Text style={styles.strong}>
             Chat with Friends and Family In Realtime.
           </Text>
@@ -38,7 +42,7 @@ export const OnBoardScreen = ({ navigation }) => {
             <PrimaryButton
               text={"get started"}
               onPress={() => navigation.navigate("login")}
-              bgColor={colors.smokyBlack}
+              bgColor={colors.mintGreen}
             />
           </View>
         </View>
@@ -53,7 +57,7 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingHorizontal: 0,
     paddingVertical: 20,
-    backgroundColor: "#fff",
+    backgroundColor: "#e5e6d8",
   },
   img: {
     width: "130%",
@@ -65,13 +69,13 @@ const styles = StyleSheet.create({
     padding: 25,
   },
   strong: {
-    fontWeight: "bold",
+    fontFamily: "MontMedium",
     fontSize: 24,
     marginBottom: 10,
     textTransform: "capitalize",
   },
   faint: {
-    opacity: 0.5,
-    lineHeight: 20,
+    fontFamily: "MontLight",
+    fontSize: 12,
   },
 })
